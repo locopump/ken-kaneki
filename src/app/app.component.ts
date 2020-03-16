@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+// import {SidebarService} from './services/services.index';
 
 @Component({
   selector: 'kenk-root',

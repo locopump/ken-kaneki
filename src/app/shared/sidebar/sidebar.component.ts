@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SidebarService} from '../../services/services.index';
 
 @Component({
   selector: 'kenk-sidebar',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  // tslint:disable-next-line:variable-name
+  constructor(public __sidebar: SidebarService) { }
 
   ngOnInit() {
   }

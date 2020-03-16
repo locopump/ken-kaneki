@@ -6,6 +6,8 @@ import {ViewsComponent} from './views.component';
 import { SharedModule } from '../shared/shared.module';
 import {routes} from './views-routing.module';
 import {RouterModule} from '@angular/router';
+import { ChartsModule } from 'ng2-charts';
+import { ChartsComponent } from './charts/charts.component';
 
 
 
@@ -13,11 +15,13 @@ import {RouterModule} from '@angular/router';
   declarations: [
     ViewsComponent,
     DashboardComponent,
-    ProgressComponent
+    ProgressComponent,
+    ChartsComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
+    ChartsModule,
     RouterModule.forChild(routes)
   ],
   exports: [

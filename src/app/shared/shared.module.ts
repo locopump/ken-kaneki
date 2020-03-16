@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import {BreadcrumbsComponent} from './breadcrumbs/breadcrumbs.component';
 import {HeaderComponent} from './header/header.component';
 import {SidebarComponent} from './sidebar/sidebar.component';
+import { DoughnutChartComponent } from './components/doughnut-chart/doughnut-chart.component';
+import {ChartsModule} from 'ng2-charts';
+import {RouterModule} from '@angular/router';
 
 
 
@@ -11,14 +14,18 @@ import {SidebarComponent} from './sidebar/sidebar.component';
     BreadcrumbsComponent,
     HeaderComponent,
     SidebarComponent,
+    DoughnutChartComponent,
   ],
   imports: [
-    CommonModule
+    RouterModule,
+    CommonModule,
+    ChartsModule
   ],
   exports: [
     BreadcrumbsComponent,
     HeaderComponent,
     SidebarComponent,
+    DoughnutChartComponent,
   ]
 })
 export class SharedModule { }

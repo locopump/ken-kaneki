@@ -1,0 +1,60 @@
+<!-- ============================================================== -->
+<!-- Start Page Content -->
+<!-- ============================================================== -->
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{graficos.genderLikes.leyenda}}</h4>
+        <div>
+          <div>
+            <kenk-doughnut-chart
+              [chartLabels] = "graficos.genderLikes.labels"
+              [chartData] = "graficos.genderLikes.data"
+              [chartType] = "graficos.genderLikes.type"
+            ></kenk-doughnut-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <div>
+          <div>
+            <kenk-doughnut-chart></kenk-doughnut-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <div>
+          <div>
+            <kenk-doughnut-chart></kenk-doughnut-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <div>
+          <div>
+            <kenk-doughnut-chart></kenk-doughnut-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ============================================================== -->
+<!-- End PAge Content -->
+<!-- ============================================================== -->
