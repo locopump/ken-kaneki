@@ -1,12 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SidebarService } from './sidebar.service';
+import { ChartsService } from './charts.service';
 
-describe('SidebarService', () => {
+describe('ChartsService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: SidebarService = TestBed.get(SidebarService);
+    const service: ChartsService = TestBed.get(ChartsService);
     expect(service).toBeTruthy();
   });
 });

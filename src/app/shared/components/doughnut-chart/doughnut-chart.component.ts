@@ -9,8 +9,8 @@ import { ChartType } from 'chart.js';
 })
 export class DoughnutChartComponent implements OnInit {
   // Doughnut
-  @Input('chartLabels') doughnutChartLabels: Label[] = [];
-  @Input('chartData') doughnutChartData: MultiDataSet = [];
+  @Input('chartLabels') doughnutChartLabels: Label = [];
+  @Input('chartData') doughnutChartData: MultiDataSet[] = [];
   @Input('chartType') doughnutChartType: ChartType = 'doughnut';
 
   constructor() { }

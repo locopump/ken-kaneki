@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PagenotfoundComponent } from './shared/pagenotfound/pagenotfound.component';
 import { ViewsModule } from './views/views.module';
 import {ServicesModule} from './services/services.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ServicesModule} from './services/services.module';
     BrowserModule,
     AppRoutingModule,
     ViewsModule,
-    ServicesModule
+    ServicesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

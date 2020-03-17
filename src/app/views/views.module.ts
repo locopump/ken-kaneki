@@ -8,6 +8,7 @@ import {routes} from './views-routing.module';
 import {RouterModule} from '@angular/router';
 import { ChartsModule } from 'ng2-charts';
 import { ChartsComponent } from './charts/charts.component';
+import { ReportesComponent } from './reportes/reportes.component';
 
 
 
@@ -16,7 +17,8 @@ import { ChartsComponent } from './charts/charts.component';
     ViewsComponent,
     DashboardComponent,
     ProgressComponent,
-    ChartsComponent
+    ChartsComponent,
+    ReportesComponent
   ],
   imports: [
     CommonModule,
